@@ -1,0 +1,1 @@
+# JavaScriptでの成果物です

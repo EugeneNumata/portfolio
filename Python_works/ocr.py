@@ -13,7 +13,7 @@ import tkinter as tk
 from tkinter import StringVar, ttk
 from tkinter import filedialog
 
-ocr_dir =  r"C:\Users\yujin.numata\App\pyworks\ocr"
+ocr_dir =  r"ocrしたいディレクトリを指定"
 
 
 

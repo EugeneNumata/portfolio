@@ -3,7 +3,7 @@ from turtle import color
 import pandas as pd
 import matplotlib.pyplot as plt
 from pkg_resources import WorkingSet
-csv = r"C:\Users\eugem\iCloudDrive\pgm\work\reference\accomodation_info.csv"
+csv = r"..\source\accomodation_info.csv"
 df = pd.read_csv(csv, index_col=0, parse_dates=[0])
 
 # resample("M")はMonthのMで、月単位の集計を行う為

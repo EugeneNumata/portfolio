@@ -15,7 +15,7 @@ import tkinter as tk
 from tkinter import StringVar
 from tkinter import ttk
 from tkinter import filedialog
-dc_dir = r"C:\Users\yujin.numata\App\pyworks\ocr"
+dc_dir = r"ダブルチェックするディレクトリ"
 
 
 

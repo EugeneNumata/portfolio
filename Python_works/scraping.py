@@ -14,6 +14,8 @@ csv_file = csv_name+csv_out
 
 csv_file_write = csv_name + w + csv_out
 
+url = "ページ数で指定できるURL" #"https://ejje.weblio.jp/sentence/content/"
+
 df = pd.read_csv(csv_file)
 length = len(df)
 
@@ -23,7 +25,7 @@ for i in range(length):
     data_i_col0 = df.iloc[i,0]
     data_i_col1 = df.iloc[i,1]
     print(data_i_col0)
-    url = "https://ejje.weblio.jp/sentence/content/" + data_i_col0
+    url = url + data_i_col0
     r = requests.get(url)
     soup = BeautifulSoup(r.text, 'html.parser')
     tags = soup.find_all("div", class_="qotC")

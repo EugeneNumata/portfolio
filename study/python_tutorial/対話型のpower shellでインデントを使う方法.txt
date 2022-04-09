@@ -1,0 +1,14 @@
+Tabキーを押すと、
+｢IndentationError: expected an indented block｣
+となってしまうので、
+Tabキーではなく、スペースキー4個を押してインデントを作る。
+こんな感じになる
+>python
+~~~~~~
+~~~~~~
+>>> t = True
+>>> if t == True:
+...     print("できた")
+... # Enterを押した
+できた
+>>>

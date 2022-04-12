@@ -28,7 +28,7 @@ file_1.htmlを編集している
 「folder2/file3.html」
 「./folder2/file3.html」
 
-つ上のフォルダにある「index.html」を指定する場合
+1つ上のフォルダにある「index.html」を指定する場合
 「../index.html」
 「./../index.html」
 「./」が現在のフォルダを指すので「../」が１つ上のフォルダになる。

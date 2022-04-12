@@ -1,4 +1,4 @@
-date,Newly infected person,Severely ill,Patients in need of inpatient treatment,Patients scheduled to be hospitalized,Cumulative discharge,Cumulative deaths
+日付,新規感染者,重症者,入院者,入院予定者,累計退院者,累計死者
 2020/5/9,108,267,6250,442,8276,613
 2020/5/10,66,249,6074,422,8514,621
 2020/5/11,58,243,5914,247,8903,643

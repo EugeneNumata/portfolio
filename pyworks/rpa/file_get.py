@@ -2,7 +2,6 @@ from cProfile import label
 import glob
 import tkinter as tk
 import pandas as pd
-import datetime
 import sys
 import os
 import re

@@ -8,8 +8,6 @@ import re
 from tkinter import messagebox
 
 
-from sklearn.metrics import classification_report
-
 path = ""
 
 root = tk.Tk()
@@ -29,14 +27,11 @@ def click():
         target = "."
         idx = file.find(target)
         file = file[:idx]
-        t = "_【求人票】"
+        t = ".【"
         i = file.find(t)
+        n = file[0:1]
         file = file[i+len(t):]
-        file = re.sub("\d","",file)
-        f = file[-1]
-        if f == "_":
-            file = file[:-1]
-        file = "・" + file
+        file = "・"+n + file
         text.write(file+"\n"+"\n")  
     text.close()
     messagebox.showinfo("完了","同じディレクトリに、ファイル一覧をテキストで作成しました。")

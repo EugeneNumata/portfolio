@@ -4,8 +4,8 @@ var ssid = "spread_sheet_id";
 var sheetname = "パソコン";
  
 function doPost(e) {
-  var params = JSON.parse(e.postData.getDataAsString()); // POSTされたデータを取得
-  var myData = params.mydata.value;  // ショートカットで指定したPOSTデータを取得
+  var params = JSON.parse(e.postData.getDataAsString()); 
+  var myData = params.mydata.value;  
   var result = {};
      
   var output = ContentService.createTextOutput();

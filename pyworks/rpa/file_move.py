@@ -22,23 +22,30 @@ from tkinter import ttk
 # b = b_path_entry.get()
 # b_0 = b[1:]
 # b = b_0[:-1]
-before_path = r"H:\YouTube\MHRise_動画作成(配信)_MAD\動画作成\02_MAD\動画素材\Album"
+before_path = r"H:\音楽_バックアップ\オヤジからの音楽"
 
 # a = a_path_entry.get()
 # a0 = a[1:]
 # a = a0[:-1]
-after_path = r"H:\YouTube\MHRise_動画作成(配信)_MAD\動画作成\02_MAD\動画素材\Allmp4"
+after_path = r"H:\音楽_バックアップ\all_songs"
 
 # k = kakutyousi.get()
 # mp4 = glob.glob(before_path + "/**/**/**/*"+k)
-mp4 = glob.glob(before_path + "/**/**/**/*.mp4")
+mp4 = glob.glob(before_path + "/**/**/*")
 bar_max = len(mp4)
+print(bar_max)
+n=1
+# for i in range(bar_max):
+#     print(mp4[i]+"\n")
+# for i in range(10):
+#     print(mp4[i]+"\n")
 
-n=0
 for i in mp4:
+    name = os.path.basename(i)
     shutil.copy(i,after_path)
+    print(str(n)+" / "+str(bar_max)+"__"+name)
     n += 1
-    print(str(n)+" / "+str(bar_max))
+    
 
 
 # # mp4 = glob.glob(before_path + "/**/**/**/*"+kakutyousi.get())

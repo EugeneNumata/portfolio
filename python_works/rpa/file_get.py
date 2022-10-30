@@ -21,7 +21,7 @@ def click():
     path = entry.get()
     files = glob.glob(path + "/*") #一階層目のファイルを取る場合はこれでいいが、2階層目は/**/*でとり、三階層目は/**/**/*で取る(以下略)
     title = "file_list.txt"
-    text = open(path+"/"+title,"w")
+    text = open(path+"/"+title,"w", encoding='UTF-8')
     for file in files:
         file = os.path.split(file)[1]
         target = "."
